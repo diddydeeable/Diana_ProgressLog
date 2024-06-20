@@ -10,8 +10,19 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 # Week 4
 ## Assessment
  ### 1. Show evidence of some of the learning outcomes you have achieved this week.
-> **[Learning outcomes...]**  
-> [your evidence here]
+> ** This week I made big progress on learning about SQL, it's syntax, and how to make SQl queries to access data from the database. Queries I made included and INSERT queries**
+> <img 
+<img width="698" alt="Screenshot 2024-06-20 at 17 37 14" src="https://github.com/diddydeeable/Diana_ProgressLog/assets/112947016/668fd81b-5615-4268-82de-e081fd48a1d8">
+<img width="608" alt="Screenshot 2024-06-20 at 17 35 53" src="https://github.com/diddydeeable/Diana_ProgressLog/assets/112947016/65070562-3bfb-424b-aa34-5b8eac58cc77">
+
+> ** I added some CRUD operations to the project. We can Create a user, Read information about a product**
+> <img width="731" alt="Screenshot 2024-06-20 at 17 41 48" src="https://github.com/diddydeeable/Diana_ProgressLog/assets/112947016/8bcfd0f5-17e9-4f64-9672-c4dbd74514a2">
+
+
+> I also gained a better understanding of relational data, including how to organize data into tables or 'entities.' With my team, I planned how the data would be stored and accessed across multiple tables. I learned that every table should have a primary key, and you can reference another table using a foreign key. Additionally, I learned that data with a many-to-many relationship requires an intermediary table to connect columns from different tables. We did this by creating an orders table to match up products (a product_id) with an order (an order_id), because an order can have several product ids. 
+><img width="858" alt="Screenshot 2024-06-20 at 17 47 39" src="https://github.com/diddydeeable/Diana_ProgressLog/assets/112947016/e3262d57-4fb2-4bbc-b9e6-fd4730c429de">
+
+
 
  ### 2. Show an example of some of the learning outcomes you have struggled with and/or would like to re-visit.
 > [**Learning outcome...**]  
