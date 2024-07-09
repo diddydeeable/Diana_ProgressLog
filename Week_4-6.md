@@ -63,12 +63,60 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 # Week 6
 ## Assessment
  ### 1. Show evidence of some of the learning outcomes you have achieved this week.
-> **[Learning outcomes...]**  
-> [your evidence here]
+> **[Learning outcomes...]**
+> This week my team and I completed our project which was a book app. 
+I tried to make code more modular and reusabile (K7, S1, S11) and as well as this I have solidified typescript skills (K7, S1, S11, S12). I did this by using custom hooks (custom state hooks for operations you often use.)
+> Here is an example of a custom hook which fetches data. I now only have to call this once in my code and the result is stored in the FetchHookState.data.
+```
+import { useState, useEffect } from "react";
+import { Books } from "../types/books";
+
+// Defines the state types for the custom useFetch hook.
+interface FetchHookState {
+  isLoading: boolean;
+  error: Error | null;
+  data: books[] | null;
+}
+
+const useFetch = (url: string,): FetchHookState => {
+  const [data, setData] = useState<Books[] | SingleReviewData | null>(
+    null,
+  );
+  const [error, setError] = useState<Error | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsLoading(true);
+      try {
+        const res = await fetch(url);
+
+        if (!res.ok) throw new Error(res.statusText);
+
+        const json = await res.json();
+
+        setData(json.data ? json.data : []) 
+       
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      } catch (error: any) {
+        setError(error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchData();
+  }, [url]);
+
+  return { isLoading, error, data };
+};
+
+export default useFetch;
+```
+
 
  ### 2. Show an example of some of the learning outcomes you have struggled with and/or would like to re-visit.
-> [**Learning outcome...**]  
-> [your evidence here]
+I struggled with validating inputs when people log in. 
+I could not return the correct error message object. 
 
 ## Feedback (For CF's)
 > [**Course Facilitator name**]  
