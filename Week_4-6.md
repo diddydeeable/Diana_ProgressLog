@@ -29,10 +29,11 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 > [your evidence here]
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
-> [*What went well*]  
+> [**Shaughn**]  
+> [*What went well*]
+> Good balance of text and images like that youre doing it by week
 > [*Even better if*]
-
+youd kept going each week and there was stuff in 7-9
 ---
 
 
@@ -54,10 +55,11 @@ Do not fill in the feedback section. The Founders and Coders team will update th
 > [your evidence here]
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
-> [*What went well*]  
+> [**Shaughn**]  
+> [*What went well*]
+> Break downs clearly show learning and technical knowledge
 > [*Even better if*]
-
+more setting the scene what is the project and the thing you are actually trying to build
 ---
 
 # Week 6
@@ -119,6 +121,8 @@ I struggled with validating inputs when people log in.
 I could not return the correct error message object. 
 
 ## Feedback (For CF's)
-> [**Course Facilitator name**]  
-> [*What went well*]  
+> [**Shaughn**]  
+> [*What went well*]
+> context for what the project was more present here 
 > [*Even better if*]
+> explain a bit more about how this makes code modular and reusable 
